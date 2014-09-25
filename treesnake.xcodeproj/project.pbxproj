@@ -13,6 +13,8 @@
 		FAE1039B19D4282500A2EE2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE1039919D4282500A2EE2E /* MainMenu.xib */; };
 		FAE103A719D4282600A2EE2E /* treesnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE103A619D4282600A2EE2E /* treesnakeTests.m */; };
 		FAE103B119D42A3200A2EE2E /* treesnake.icns in Resources */ = {isa = PBXBuildFile; fileRef = FAE103B019D42A3200A2EE2E /* treesnake.icns */; };
+		FAE103B419D42D0900A2EE2E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FAE103B219D42D0900A2EE2E /* LICENSE */; };
+		FAE103B519D42D0900A2EE2E /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAE103B319D42D0900A2EE2E /* TemplateIcon2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		FAE103A519D4282600A2EE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE103A619D4282600A2EE2E /* treesnakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = treesnakeTests.m; sourceTree = "<group>"; };
 		FAE103B019D42A3200A2EE2E /* treesnake.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = treesnake.icns; sourceTree = "<group>"; };
+		FAE103B219D42D0900A2EE2E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FAE103B319D42D0900A2EE2E /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		FAE1038419D4282500A2EE2E = {
 			isa = PBXGroup;
 			children = (
+				FAE103B219D42D0900A2EE2E /* LICENSE */,
+				FAE103B319D42D0900A2EE2E /* TemplateIcon2x.png */,
 				FAE103B019D42A3200A2EE2E /* treesnake.icns */,
 				FAE1038F19D4282500A2EE2E /* treesnake */,
 				FAE103A319D4282600A2EE2E /* treesnakeTests */,
@@ -194,8 +200,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE103B519D42D0900A2EE2E /* TemplateIcon2x.png in Resources */,
 				FAE103B119D42A3200A2EE2E /* treesnake.icns in Resources */,
 				FAE1039819D4282500A2EE2E /* Images.xcassets in Resources */,
+				FAE103B419D42D0900A2EE2E /* LICENSE in Resources */,
 				FAE1039B19D4282500A2EE2E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
