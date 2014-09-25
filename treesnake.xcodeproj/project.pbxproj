@@ -12,6 +12,7 @@
 		FAE1039819D4282500A2EE2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE1039719D4282500A2EE2E /* Images.xcassets */; };
 		FAE1039B19D4282500A2EE2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE1039919D4282500A2EE2E /* MainMenu.xib */; };
 		FAE103A719D4282600A2EE2E /* treesnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE103A619D4282600A2EE2E /* treesnakeTests.m */; };
+		FAE103B119D42A3200A2EE2E /* treesnake.icns in Resources */ = {isa = PBXBuildFile; fileRef = FAE103B019D42A3200A2EE2E /* treesnake.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		FAE103A019D4282600A2EE2E /* treesnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = treesnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE103A519D4282600A2EE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE103A619D4282600A2EE2E /* treesnakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = treesnakeTests.m; sourceTree = "<group>"; };
+		FAE103B019D42A3200A2EE2E /* treesnake.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = treesnake.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FAE1038419D4282500A2EE2E = {
 			isa = PBXGroup;
 			children = (
+				FAE103B019D42A3200A2EE2E /* treesnake.icns */,
 				FAE1038F19D4282500A2EE2E /* treesnake */,
 				FAE103A319D4282600A2EE2E /* treesnakeTests */,
 				FAE1038E19D4282500A2EE2E /* Products */,
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE103B119D42A3200A2EE2E /* treesnake.icns in Resources */,
 				FAE1039819D4282500A2EE2E /* Images.xcassets in Resources */,
 				FAE1039B19D4282500A2EE2E /* MainMenu.xib in Resources */,
 			);
@@ -328,6 +332,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = treesnake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,6 +344,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = treesnake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
