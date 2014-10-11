@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>33709C6F-2D1E-406C-BB5C-BFE2C3AAE283</string>
+	<key>IDESourceControlProjectName</key>
+	<string>treesnake</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>28BB63095136A80E8E6AE1E3A6D7EAD32301B147</key>
+		<string>github.com:hiway/treesnake.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>treesnake.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>28BB63095136A80E8E6AE1E3A6D7EAD32301B147</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:hiway/treesnake.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>28BB63095136A80E8E6AE1E3A6D7EAD32301B147</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>28BB63095136A80E8E6AE1E3A6D7EAD32301B147</string>
+			<key>IDESourceControlWCCName</key>
+			<string>treesnake</string>
+		</dict>
+	</array>
+</dict>
+</plist>
