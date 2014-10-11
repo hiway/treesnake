@@ -40,11 +40,7 @@ PyObject     *treesnakeLib = NULL;
     statusMenu = [[NSMenu alloc] initWithTitle:@""];
     [statusMenu setAutoenablesItems:NO];
     
-    //[statusMenu addItemWithTitle:@"One" action:nil keyEquivalent:@""];
-    //[statusMenu addItemWithTitle:@"Two" action:nil keyEquivalent:@""];
-    //[statusMenu addItemWithTitle:@"Three" action:nil keyEquivalent:@""];
-    [statusMenu addItemWithTitle:@"Reload" action:@selector(reloadPython:) keyEquivalent:@""];
-    [statusMenu addItemWithTitle:@"Test" action:@selector(testPython:) keyEquivalent:@""];
+//    [statusMenu addItemWithTitle:@"Test" action:@selector(testPython:) keyEquivalent:@"t"];
     
     //[statusMenu addItem:[NSMenuItem separatorItem]];
     
@@ -55,7 +51,31 @@ PyObject     *treesnakeLib = NULL;
     
     // Attach the menu
     [statusItem setMenu:statusMenu];
+    
+    [self reloadPython];
+    [self updateStatusMenu];
+    
+    NSString *refresh_rate = call_function(@"refresh_rate");
+    
+    NSLog(@"%lld", [refresh_rate longLongValue]);
+    
+    [NSTimer scheduledTimerWithTimeInterval:[refresh_rate longLongValue]
+                                     target:self
+                                   selector:@selector(updateStatusMenu)
+                                   userInfo:nil
+                                    repeats:YES];
 }
+
+-(void) updateStatusMenu {
+    NSString *output = call_function(@"command");
+    if (output) {
+        NSString *text = output;
+        statusItem.title = text;
+    } else {
+        statusItem.title = @"NULL";
+    }
+}
+
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
@@ -64,7 +84,7 @@ PyObject     *treesnakeLib = NULL;
 - (void) awakeFromNib {
 }
 
--(void)reloadPython:(id) sender
+-(void)reloadPython
 {
     NSLog(@"Load/Reload Python!");
     Py_Initialize();
@@ -98,7 +118,7 @@ PyObject     *treesnakeLib = NULL;
 
 -(void)testPython:(id) sender
 {
-    NSString *output = call_function(@"refresh_rate");
+    NSString *output = call_function(@"refresh_rte");
     if (output) {
         NSString *text = output;
         statusItem.title = text;
@@ -117,10 +137,11 @@ NSString *call_function(NSString *functionName)
             return [NSString stringWithFormat:@"%s", PyString_AsString(result)];
         }
         else {
-            return @"Function not found or not callable.";
+//            return @"Function not found or not callable.";
+            return [functionName stringByAppendingString:@": cannot call"];
         }
     } else {
-        return @"treesnake module not found or not loaded";
+        return @"treesnake: not loaded";
     }
 }
 
