@@ -1,7 +1,7 @@
 treesnake
 =========
 
-Treesnake sits in your MacOSX System Menu, and displays text recieved from your Python scripts.
+Treesnake sits in your MacOSX System Menu, and displays text received from your Python scripts.
 
 Installation procedure: 
   - Download latest release
